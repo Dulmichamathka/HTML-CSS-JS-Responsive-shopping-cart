@@ -1,6 +1,11 @@
 /* google font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --dark-purple: #705eb4;
+  --light-purple: #e2aef4;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -14,4 +19,62 @@ img {
   width: 100%;
 }
 
-/*  */
+/* Container */
+
+/* this makes container styles. we can put static container width by using this and can use everywhere which we want to include within the relavant container */
+.container {
+  max-width: 1070px;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 200;
+}
+/* this makes nav bar styles */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #e2aef4, #705eb4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon i {
+  font-size: 24px;
+}
+
+.cart-icon span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: var(--dark-purple);
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+/* products */
+
+.products {
+}
